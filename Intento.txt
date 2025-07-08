@@ -1,0 +1,189 @@
+    1  cd ..
+    2  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+    3  sudo apt-get install ca-certificates curl
+    4  sudo install -m 0755 -d /etc/apt/keyrings
+    5  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+    6  sudo chmod a+r /etc/apt/keyrings/docker.asc
+    7  # Add the repository to Apt sources:
+    8  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+    9    $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   10  sudo apt-get update
+   11  apt-get install ca-certificates curl
+   12  sudo apt-get install ca-certificates curl
+   13  sudo apt-get update
+   14  sudo apt-get install ca-certificates curl
+   15  sudo install -m 0755 -d /etc/apt/keyrings
+   16  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   17  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   18  ls -l /etc/apt/keyrings/docker.asc 
+   19  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   20    $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   21  sudo apt-get update
+   22  sudo cat /etc/apt/sources.list.d/docker.list > /dev/null
+   23  sudo cat /etc/apt/sources.list.d/docker.list 
+   24  sudo apt install ansible tree
+   25  sudo usermod -a -G docker $(whoami)
+   26  sudo grep - lcanestrari /etc/group
+   27  sudo grep - docker /etc/group
+   28  sudo apt-get update
+   29  sudo apt-get install ca-certificates curl
+   30  sudo install -m 0755 -d /etc/apt/keyrings
+   31  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   32  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   33  # Add the repository to Apt sources:
+   34  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   35    $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   36  sudo apt-get update
+   37  sudo grep - lcanestrari /etc/group
+   38  ls -l /etc/group
+   39  cat /etc/group
+   40  sudo grep docker /etc/group 
+   41  grep docker /etc/group 
+   42  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   43  grep docker /etc/group 
+   44  sudo usermod -a -G docker lcanestrari 
+   45  id
+   46  grep lcanestrari /etc/group
+   47  docker ps
+   48  sudo ls -l /home/vagrant 
+   49  sudo systemctl status docker
+   50  sudo ssh-keygen -t ed25519
+   51  cat $HOME/.ssh/*.pub
+   52  s
+   53  cat $HOME/.ssh/*.pub
+   54  ls -la
+   55  cd ..
+   56  ls -la
+   57  ssh-keygen -t ed25519
+   58  ls -l
+   59  cd lcanestrari/
+   60  ls -l
+   61  mkdir Examen
+   62  cd Examen/
+   63  git clone git@github.com:LCanestrari/AySO_Recuperatorio_Canestrari.git 
+   64  git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+   65  cd UTN-FRA_SO_Examenes/
+   66  cd ../AySO_Recuperatorio_Canestrari/
+   67  cp -r ../UTN-FRA_SO_Examenes/carpeta_a_copiar .
+   68  cp -r ../UTN-FRA_SO_Examenes/202408/ .
+   69  ./AySO_Recuperatorio_Canestrari/202408/script_Precondicion.sh
+   70  ls -l
+   71  ls -l 202408/
+   72  ./AySO/202408/script_Precondicion.sh
+   73  ./UTN-FRA_SO_Examenes/202408/script_Precondicion.sh
+   74  cd ..
+   75  cd UTN-FRA_SO_Examenes/
+   76  ./UTN-FRA_SO_Examenes/202408/script_Precondicion.sh
+   77  cd ..
+   78  ./UTN-FRA_SO_Examenes/202408/script_Precondicion.sh
+   79  source  ~/.bashrc  && history -a
+   80  cd AySO_Recuperatorio_Canestrari/
+   81  cd ..
+   82  cd RTA_Examen_20250708/
+   83  ll
+   84  cd ..
+   85  chmod 775 RTA_Examen_20250708/*
+   86  ll RTA_Examen_20250708/
+   87  cd RTA_Examen_20250708/
+   88  vim Punto_A.sh 
+   89  sudo fdisk -l
+   90  sudo /dev/sde < CORTE
+   91  sudo fdisk /dev/sde < CORTE
+   92  sudo fdisk /dev/sde 
+   93  sudo fdisk -l /dev/sde 
+   94  sudo fdisk /dev/sde
+   95  sudo mount | grep sde
+   96  sudo fdisk -l /dev/sde
+   97  sudo partprobe
+   98  sudo fdisk -l
+   99  sudo fdisk /dev/sdc
+  100  sudo fdisk -l
+  101  sudo fdisk /dev/sdd
+  102  sudo fdisk -l
+  103  sudo fdisk -l | grep LVM
+  104  sudo pvcreate /dev/sde2 /dev/sdd1 /dev/sdc2 /dev/sdc1
+  105  sudo pvs
+  106  vgcreate vg_temp /dev/sdc1
+  107  sudo vgcreate vg_temp /dev/sdc1
+  108  pvs
+  109  sudo pvs
+  110  sudo vgcreate vg_datos /dev/sdc2 /dev/sdd1 /dev/sde2
+  111  sudo vgs
+  112  sudo lvcreate -L 10M vg_datos -n lv_docker
+  113  ll /dev/mapper/vg_datos-lv_docker 
+  114  sudo mkfs.ext4 /dev/mapper/vg_datos-lv_docker
+  115  sudo mount /dev/mapper/vg_datos-lv_docker /var/lib/docker/
+  116  df -h
+  117  sudo lvcreate -L 1.5G vg_datos -n lv_multimedia 
+  118  sudo mkfs.ext4 /dev/mapper/vg_datos-lv_multimedia 
+  119  df -h
+  120  sudo mount /dev/mapper/vg_datos-lv_multimedia /Multimedia/
+  121  sudo mount /dev/mapper/vg_datos-lv_multimedia /Multimedia
+  122  sudo mount /dev/mapper/vg_datos-lv_multimedia Multimedia
+  123  df -h
+  124  sudo mount /dev/mapper/vg_datos-lv_multimedia /Multimedia
+  125  sudo su - lcanestrari
+  126  df -h
+  127  cd ..
+  128  cat .ssh/
+  129  ll .ssh/
+  130  cd RTA_Examen_20250708/
+  131  df -h
+  132  sudo mkfs.ext4 /dev/mapper/vg_datos-lv_multimedia 
+  133  sudo mount /dev/mapper/vg_datos-lv_multimedia 
+  134  cd /etc/fstab
+  135  cd ../etc/fstab
+  136  cd ..
+  137  pwd
+  138  cd /etc/fstab
+  139  cd /etc/
+  140  mkdir fstab
+  141  sudo mount /dev/mapper/vg_datos-lv_multimedia /Multimedia/
+  142  sudo vgs
+  143  sudo partprobe
+  144  sudo pvs
+  145  sudo vgs pvs
+  146  sudo vgs | pvs
+  147  sudo vgs
+  148  sudo pvs
+  149  sudo vgs
+  150  sudo mkfs.ext4 /dev/vg_datos/lv_multimedia
+  151  sudo mkdir -p /Multimedia
+  152  sudo mount /dev/vg_datos/lv_multimedia /Multimedia
+  153  df -h
+  154  sudo lvs
+  155  sudo vgs
+  156  sudo lvcreate -L 2G -n lv_swap vg_temp
+  157  sudo lvcreate -L 1.9G -n lv_swap vg_temp
+  158  sudo mkswap /dev/vg_datos/lv_multimedia
+  159  sudo mkswap /dev/vg_temp/lv_swap
+  160  sudo swapon /dev/lv_temp/lv-swap
+  161  sudo swapon /dev/vg_temp/lv_swap
+  162  swapon --show
+  163  sudo usermod -aG docker lcanestrari
+  164  id
+  165  grep docker /etc/group
+  166  docker ps
+  167  ssh-copy-id localhost
+  168  id
+  169  git add .
+  170  git status
+  171  cd Examen/
+  172  git status
+  173  cd ..
+  174  git clone git@github.com:LCanestrari/AySO_Recuperatorio_Canestrari.git
+  175  cd AySO_Recuperatorio_Canestrari/
+  176  cd ..
+  177  git add .
+  178  cd AySO_Recuperatorio_Canestrari/
+  179  git add .
+  180  git status
+  181  cd ..
+  182  echo history > Intento examen
+  183  mv Intento /home/lcanestrari/AySO_Recuperatorio_Canestrari/
+  184  cd AySO_Recuperatorio_Canestrari/
+  185  cat Intento 
+  186  history
+  187  cat history >> Intento 
+  188  cat history
+  189  cp history > Intento.txt
